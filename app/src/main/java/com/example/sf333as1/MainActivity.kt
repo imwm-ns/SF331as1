@@ -88,7 +88,7 @@ fun GuessNumber(answer: Int) {
                 .padding(vertical = 20.dp)
         )
         Spacer(modifier = Modifier.height(150.dp))
-        EditNumber(
+        EditInputField(
             value = guess,
             onValueChange = { guess = it },
             enabled = isWin,
@@ -129,7 +129,7 @@ fun GuessNumber(answer: Int) {
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun EditNumber(
+fun EditInputField(
     value: String,
     onValueChange: (String) -> Unit,
     enabled: Boolean,
