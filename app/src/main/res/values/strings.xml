@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">SF333as1</string>
+    <string name="header">Number Guessing Game</string>
 </resources>
