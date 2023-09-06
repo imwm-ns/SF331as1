@@ -83,7 +83,6 @@ fun GuessNumber(answer: Int) {
                 fontWeight = FontWeight.W500,
                 textAlign = TextAlign.Center
             ),
-//            textAlign = "center",
             modifier = Modifier
                 .padding(vertical = 20.dp)
         )
@@ -123,7 +122,6 @@ fun GuessNumber(answer: Int) {
                 fontSize = 18.sp
             )
         )
-        Text(text = "Answer: ${answer}")
     }
 }
 
