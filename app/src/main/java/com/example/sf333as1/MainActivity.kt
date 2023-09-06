@@ -122,7 +122,6 @@ fun GuessNumber(answer: Int) {
                 fontSize = 18.sp
             )
         )
-        Text(text = "Answer: ${answer}")
     }
 }
 
