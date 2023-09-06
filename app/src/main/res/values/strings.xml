@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">SF333as1</string>
     <string name="header">Number Guessing Game</string>
+    <string name="main_topic">Try to guess the number I\'m thinking of from 1-1000!</string>
+    <string name="placeholder">Your Guess</string>
+    <string name="label_btn">PLAY AGAIN</string>
 </resources>
