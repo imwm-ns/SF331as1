@@ -117,7 +117,7 @@ fun GuessNumber(answer: Int) {
             )
         }
         Text(
-            text = "Count: ${count}",
+            text = "Count: $count",
             style = TextStyle(
                 fontSize = 18.sp
             )
