@@ -7,5 +7,7 @@
   This is a Number Guessing Game. We created the game using Kotlin and Jetpack Compose. I hope you will enjoy playing the game. <br>
 
 **Game Demo:** <br>
-https://github.com/imwm-ns/SF331as1/assets/87740579/076a5372-c5b3-4520-b105-22ae1ea6ebd1
+https://github.com/imwm-ns/SF331as1/assets/87740579/f2d96809-b234-46d5-b90b-444805b5c7d2
+
+
 
