@@ -12,7 +12,6 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.Button
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -83,7 +82,6 @@ fun GuessNumber(answer: Int) {
                 fontWeight = FontWeight.W500,
                 textAlign = TextAlign.Center
             ),
-//            textAlign = "center",
             modifier = Modifier
                 .padding(vertical = 20.dp)
         )
@@ -105,7 +103,7 @@ fun GuessNumber(answer: Int) {
         Button(
             onClick = {
                 result = checkAnswer(number = guess, answer = answer)
-                if (result != "You win. The answer is ${answer}") {
+                if (result != "You win. The answer is $answer") {
                     count++
                 }
                 else isWin = false
@@ -118,12 +116,11 @@ fun GuessNumber(answer: Int) {
             )
         }
         Text(
-            text = "Count: ${count}",
+            text = "Count: $count",
             style = TextStyle(
                 fontSize = 18.sp
             )
         )
-        Text(text = "Answer: ${answer}")
     }
 }
 
@@ -160,5 +157,5 @@ private fun checkAnswer(number: String, answer: Int): String {
     return if (guess < answer) "Hint: It's lower."
     else if (guess in (answer + 1)..1000) "Hint: It's higher."
     else if (guess > 1000) "Your answer over a range."
-    else "You win. The answer is ${answer}"
+    else "You win. The answer is $answer"
 }
